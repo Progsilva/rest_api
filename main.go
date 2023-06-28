@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Progsilva/rest_api/server"
+)
 
 func main() {
-	fmt.Println("Hello World!")
+	s := server.NewServer()
+
+	s.Run()
 }
